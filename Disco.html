@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Print below text</title>
+
+    </head>
+
+    <style>
+        .p {
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            margin: 20% auto;
+            display: flex;
+
+        }
+    </style>
+
+
+
+
+    <body id='body'>
+        <div class='p' id='color'>
+            <h1>DISCO</h1>
+        </div>
+    </body>
+
+    <script>
+
+
+        color = 'red'
+
+        function shuffleColor () {
+            if ( color == 'red' ) color = 'green'
+            else if ( color == 'green' ) color = 'blue'
+            else if ( color == 'blue' ) color = 'red'
+
+            document.getElementById( "body" ).style.backgroundColor = color
+        }
+
+        setInterval( shuffleColor, 1000 )
+    </script>
+
+
+
+
+
+
+</html>
